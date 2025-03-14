@@ -1,6 +1,11 @@
 create database Practica
 go
-use Practica
+
+select * from Productos
+
+
+
+
 
 create table Productos 
 (

@@ -41,6 +41,7 @@
             label5 = new Label();
             btnGuardar = new Button();
             btnEditar = new Button();
+            btnEliminar = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -83,7 +84,6 @@
             label2.Size = new Size(69, 15);
             label2.TabIndex = 3;
             label2.Text = "Descripción";
-            label2.Click += label2_Click;
             // 
             // txtMarca
             // 
@@ -135,7 +135,7 @@
             // 
             // btnGuardar
             // 
-            btnGuardar.Location = new Point(844, 297);
+            btnGuardar.Location = new Point(844, 298);
             btnGuardar.Name = "btnGuardar";
             btnGuardar.Size = new Size(95, 46);
             btnGuardar.TabIndex = 11;
@@ -151,11 +151,22 @@
             btnEditar.Text = "EDITAR";
             btnEditar.UseVisualStyleBackColor = true;
             // 
+            // btnEliminar
+            // 
+            btnEliminar.Location = new Point(152, 361);
+            btnEliminar.Name = "btnEliminar";
+            btnEliminar.Size = new Size(95, 33);
+            btnEliminar.TabIndex = 13;
+            btnEliminar.Text = "BORRAR";
+            btnEliminar.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.WhiteSmoke;
             ClientSize = new Size(1026, 409);
+            Controls.Add(btnEliminar);
             Controls.Add(btnEditar);
             Controls.Add(btnGuardar);
             Controls.Add(txtStock);
@@ -170,7 +181,7 @@
             Controls.Add(label1);
             Controls.Add(dataGridView1);
             Name = "Form1";
-            Text = "Form1";
+            Text = "Productos";
             Load += Form1_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
@@ -192,5 +203,6 @@
         private Label label5;
         private Button btnGuardar;
         private Button btnEditar;
+        private Button btnEliminar;
     }
 }
