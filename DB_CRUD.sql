@@ -36,6 +36,9 @@ Insert into Usuarios values ('Mario', 'Mario03', '123' , 'admin'),
 ('Jose' , 'Jose03', '123', 'Usuario');
 
 
+
+
+
 ---PROCEDIMIENTOS ALMACENADOS 
 --------------------------MOSTRAR 
 go
