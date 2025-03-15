@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             dataGridView1 = new DataGridView();
             label1 = new Label();
             txtNombre = new TextBox();
@@ -42,6 +43,7 @@
             btnGuardar = new Button();
             btnEditar = new Button();
             btnEliminar = new Button();
+            btnRegresar = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -56,6 +58,8 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold);
+            label1.ForeColor = Color.White;
             label1.Location = new Point(721, 81);
             label1.Name = "label1";
             label1.Size = new Size(51, 15);
@@ -79,9 +83,11 @@
             // label2
             // 
             label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold);
+            label2.ForeColor = Color.White;
             label2.Location = new Point(718, 123);
             label2.Name = "label2";
-            label2.Size = new Size(69, 15);
+            label2.Size = new Size(70, 15);
             label2.TabIndex = 3;
             label2.Text = "Descripción";
             // 
@@ -95,6 +101,8 @@
             // label3
             // 
             label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold);
+            label3.ForeColor = Color.White;
             label3.Location = new Point(721, 167);
             label3.Name = "label3";
             label3.Size = new Size(40, 15);
@@ -111,6 +119,8 @@
             // label4
             // 
             label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold);
+            label4.ForeColor = Color.White;
             label4.Location = new Point(721, 209);
             label4.Name = "label4";
             label4.Size = new Size(40, 15);
@@ -127,9 +137,11 @@
             // label5
             // 
             label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold);
+            label5.ForeColor = Color.White;
             label5.Location = new Point(721, 254);
             label5.Name = "label5";
-            label5.Size = new Size(36, 15);
+            label5.Size = new Size(37, 15);
             label5.TabIndex = 9;
             label5.Text = "Stock";
             // 
@@ -160,12 +172,27 @@
             btnEliminar.Text = "BORRAR";
             btnEliminar.UseVisualStyleBackColor = true;
             // 
+            // btnRegresar
+            // 
+            btnRegresar.BackColor = Color.Teal;
+            btnRegresar.BackgroundImage = (Image)resources.GetObject("btnRegresar.BackgroundImage");
+            btnRegresar.BackgroundImageLayout = ImageLayout.Zoom;
+            btnRegresar.FlatStyle = FlatStyle.Flat;
+            btnRegresar.ForeColor = Color.Teal;
+            btnRegresar.Location = new Point(3, 6);
+            btnRegresar.Name = "btnRegresar";
+            btnRegresar.Size = new Size(41, 29);
+            btnRegresar.TabIndex = 14;
+            btnRegresar.UseVisualStyleBackColor = false;
+            btnRegresar.Click += btnRegresar_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.WhiteSmoke;
+            BackColor = Color.Teal;
             ClientSize = new Size(1026, 409);
+            Controls.Add(btnRegresar);
             Controls.Add(btnEliminar);
             Controls.Add(btnEditar);
             Controls.Add(btnGuardar);
@@ -204,5 +231,6 @@
         private Button btnGuardar;
         private Button btnEditar;
         private Button btnEliminar;
+        private Button btnRegresar;
     }
 }
