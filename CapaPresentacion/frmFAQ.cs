@@ -10,11 +10,23 @@ using System.Windows.Forms;
 
 namespace CapaPresentacion
 {
-    public partial class frmFAQ: Form
+    public partial class frmFAQ : Form
     {
         public frmFAQ()
         {
             InitializeComponent();
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnRegresar_Click(object sender, EventArgs e)
+        {
+            frmHome frmHome = new frmHome();
+            frmHome.Show();
+            this.Hide();
         }
     }
 }
