@@ -153,6 +153,7 @@
             btnGuardar.TabIndex = 11;
             btnGuardar.Text = "GUARDAR";
             btnGuardar.UseVisualStyleBackColor = true;
+            btnGuardar.Click += btnGuardar_Click;
             // 
             // btnEditar
             // 
@@ -162,6 +163,7 @@
             btnEditar.TabIndex = 12;
             btnEditar.Text = "EDITAR";
             btnEditar.UseVisualStyleBackColor = true;
+            btnEditar.Click += btnEditar_Click;
             // 
             // btnEliminar
             // 
@@ -171,14 +173,15 @@
             btnEliminar.TabIndex = 13;
             btnEliminar.Text = "BORRAR";
             btnEliminar.UseVisualStyleBackColor = true;
+            btnEliminar.Click += btnEliminar_Click;
             // 
             // btnRegresar
             // 
-            btnRegresar.BackColor = Color.Teal;
+            btnRegresar.BackColor = SystemColors.HotTrack;
             btnRegresar.BackgroundImage = (Image)resources.GetObject("btnRegresar.BackgroundImage");
             btnRegresar.BackgroundImageLayout = ImageLayout.Zoom;
             btnRegresar.FlatStyle = FlatStyle.Flat;
-            btnRegresar.ForeColor = Color.Teal;
+            btnRegresar.ForeColor = SystemColors.HotTrack;
             btnRegresar.Location = new Point(3, 6);
             btnRegresar.Name = "btnRegresar";
             btnRegresar.Size = new Size(41, 29);
@@ -190,7 +193,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.Teal;
+            BackColor = SystemColors.HotTrack;
             ClientSize = new Size(1026, 409);
             Controls.Add(btnRegresar);
             Controls.Add(btnEliminar);

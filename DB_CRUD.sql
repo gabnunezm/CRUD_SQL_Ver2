@@ -1,12 +1,9 @@
 create database Practica
 go
 
+
+-- PRODUCTOS
 select * from Productos
-
-
-
-
-
 create table Productos 
 (
 Id int identity (1,1) primary key,
@@ -21,6 +18,23 @@ insert into Productos
 values
 ('Gaseosa','3 litros','marcacola',7.5,24),
 ('Chocolate','Tableta 100 gramos','iberica',12.5,36)
+
+--USUARIOS
+CREATE TABLE Usuarios
+(
+  [Id_Usuario] INT NOT NULL PRIMARY KEY IDENTITY(1,1),
+  [Nombre] VARCHAR (50) NULL,
+  [Usuario] VARCHAR (50) 
+NULL,
+  [Password] VARCHAR (50) NULL,
+  [Tipo_usuario] VARCHAR (50) NULL
+)
+
+Select * from Usuarios 
+
+Insert into Usuarios values ('Mario', 'Mario03', '123' , 'admin'),
+('Jose' , 'Jose03', '123', 'Usuario');
+
 
 ---PROCEDIMIENTOS ALMACENADOS 
 --------------------------MOSTRAR 

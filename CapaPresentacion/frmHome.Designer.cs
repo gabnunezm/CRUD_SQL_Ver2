@@ -30,33 +30,23 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmHome));
             panel1 = new Panel();
-            panel2 = new Panel();
             label1 = new Label();
-            button1 = new Button();
-            btnProductos = new Button();
+            panel2 = new Panel();
             btnFAQ = new Button();
+            btnProductos = new Button();
+            button1 = new Button();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
             // 
+            panel1.BackColor = SystemColors.HotTrack;
             panel1.Controls.Add(label1);
             panel1.Location = new Point(0, 1);
             panel1.Name = "panel1";
             panel1.Size = new Size(751, 90);
             panel1.TabIndex = 0;
-            // 
-            // panel2
-            // 
-            panel2.BackColor = Color.Teal;
-            panel2.Controls.Add(btnFAQ);
-            panel2.Controls.Add(btnProductos);
-            panel2.Controls.Add(button1);
-            panel2.Location = new Point(0, 180);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(751, 115);
-            panel2.TabIndex = 1;
             // 
             // label1
             // 
@@ -69,24 +59,36 @@
             label1.TabIndex = 0;
             label1.Text = "INICIO";
             // 
-            // button1
+            // panel2
             // 
-            button1.BackgroundImage = (Image)resources.GetObject("button1.BackgroundImage");
-            button1.BackgroundImageLayout = ImageLayout.Center;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.ForeColor = Color.Teal;
-            button1.Location = new Point(200, 16);
-            button1.Name = "button1";
-            button1.Size = new Size(87, 85);
-            button1.TabIndex = 0;
-            button1.UseVisualStyleBackColor = true;
+            panel2.BackColor = SystemColors.HotTrack;
+            panel2.Controls.Add(btnFAQ);
+            panel2.Controls.Add(btnProductos);
+            panel2.Controls.Add(button1);
+            panel2.Location = new Point(0, 180);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(751, 115);
+            panel2.TabIndex = 1;
+            // 
+            // btnFAQ
+            // 
+            btnFAQ.BackColor = SystemColors.HotTrack;
+            btnFAQ.BackgroundImage = (Image)resources.GetObject("btnFAQ.BackgroundImage");
+            btnFAQ.BackgroundImageLayout = ImageLayout.Center;
+            btnFAQ.FlatStyle = FlatStyle.Flat;
+            btnFAQ.ForeColor = SystemColors.HotTrack;
+            btnFAQ.Location = new Point(458, 16);
+            btnFAQ.Name = "btnFAQ";
+            btnFAQ.Size = new Size(87, 85);
+            btnFAQ.TabIndex = 2;
+            btnFAQ.UseVisualStyleBackColor = false;
             // 
             // btnProductos
             // 
             btnProductos.BackgroundImage = (Image)resources.GetObject("btnProductos.BackgroundImage");
             btnProductos.BackgroundImageLayout = ImageLayout.Center;
             btnProductos.FlatStyle = FlatStyle.Flat;
-            btnProductos.ForeColor = Color.Teal;
+            btnProductos.ForeColor = SystemColors.HotTrack;
             btnProductos.Location = new Point(328, 16);
             btnProductos.Name = "btnProductos";
             btnProductos.Size = new Size(87, 85);
@@ -94,24 +96,23 @@
             btnProductos.UseVisualStyleBackColor = true;
             btnProductos.Click += btnProductos_Click;
             // 
-            // btnFAQ
+            // button1
             // 
-            btnFAQ.BackColor = Color.Teal;
-            btnFAQ.BackgroundImage = (Image)resources.GetObject("btnFAQ.BackgroundImage");
-            btnFAQ.BackgroundImageLayout = ImageLayout.Center;
-            btnFAQ.FlatStyle = FlatStyle.Flat;
-            btnFAQ.ForeColor = Color.Teal;
-            btnFAQ.Location = new Point(458, 16);
-            btnFAQ.Name = "btnFAQ";
-            btnFAQ.Size = new Size(87, 85);
-            btnFAQ.TabIndex = 2;
-            btnFAQ.UseVisualStyleBackColor = false;
+            button1.BackgroundImage = (Image)resources.GetObject("button1.BackgroundImage");
+            button1.BackgroundImageLayout = ImageLayout.Center;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.ForeColor = SystemColors.HotTrack;
+            button1.Location = new Point(200, 16);
+            button1.Name = "button1";
+            button1.Size = new Size(87, 85);
+            button1.TabIndex = 0;
+            button1.UseVisualStyleBackColor = true;
             // 
             // frmHome
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.Teal;
+            BackColor = SystemColors.HotTrack;
             ClientSize = new Size(751, 402);
             Controls.Add(panel2);
             Controls.Add(panel1);
