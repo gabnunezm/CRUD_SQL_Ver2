@@ -24,5 +24,19 @@ namespace CapaPresentacion
             this.Hide();
 
         }
+
+        private void btnUsuarios_Click(object sender, EventArgs e)
+        {
+            frmUsuarios frmUsuarios = new frmUsuarios();
+            frmUsuarios.Show();
+            this.Hide();
+        }
+
+        private void btnFAQ_Click(object sender, EventArgs e)
+        {
+            frmFAQ frmFAQ = new frmFAQ();
+            frmFAQ.Show();
+            this.Hide();
+        }
     }
 }

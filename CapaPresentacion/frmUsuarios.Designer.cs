@@ -57,6 +57,7 @@
             btnRegresar.Size = new Size(41, 29);
             btnRegresar.TabIndex = 29;
             btnRegresar.UseVisualStyleBackColor = false;
+            btnRegresar.Click += btnRegresar_Click;
             // 
             // btnEliminar
             // 
@@ -69,6 +70,7 @@
             btnEliminar.Size = new Size(45, 33);
             btnEliminar.TabIndex = 28;
             btnEliminar.UseVisualStyleBackColor = true;
+            btnEliminar.Click += btnEliminar_Click;
             // 
             // btnEditar
             // 
@@ -81,6 +83,7 @@
             btnEditar.Size = new Size(49, 33);
             btnEditar.TabIndex = 27;
             btnEditar.UseVisualStyleBackColor = true;
+            btnEditar.Click += btnEditar_Click;
             // 
             // btnGuardar
             // 
@@ -93,6 +96,7 @@
             btnGuardar.Size = new Size(95, 65);
             btnGuardar.TabIndex = 26;
             btnGuardar.UseVisualStyleBackColor = true;
+            btnGuardar.Click += btnGuardar_Click;
             // 
             // txtPrecio
             // 

@@ -10,11 +10,33 @@ using System.Windows.Forms;
 
 namespace CapaPresentacion
 {
-    public partial class frmUsuarios: Form
+    public partial class frmUsuarios : Form
     {
         public frmUsuarios()
         {
             InitializeComponent();
+        }
+
+        private void btnRegresar_Click(object sender, EventArgs e)
+        {
+            frmHome frmHome = new frmHome();
+            frmHome.Show();
+            this.Hide();
+        }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -34,7 +34,7 @@
             panel2 = new Panel();
             btnFAQ = new Button();
             btnProductos = new Button();
-            button1 = new Button();
+            btnUsuarios = new Button();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             SuspendLayout();
@@ -64,7 +64,7 @@
             panel2.BackColor = SystemColors.HotTrack;
             panel2.Controls.Add(btnFAQ);
             panel2.Controls.Add(btnProductos);
-            panel2.Controls.Add(button1);
+            panel2.Controls.Add(btnUsuarios);
             panel2.Location = new Point(0, 180);
             panel2.Name = "panel2";
             panel2.Size = new Size(751, 115);
@@ -82,6 +82,7 @@
             btnFAQ.Size = new Size(87, 85);
             btnFAQ.TabIndex = 2;
             btnFAQ.UseVisualStyleBackColor = false;
+            btnFAQ.Click += btnFAQ_Click;
             // 
             // btnProductos
             // 
@@ -96,17 +97,18 @@
             btnProductos.UseVisualStyleBackColor = true;
             btnProductos.Click += btnProductos_Click;
             // 
-            // button1
+            // btnUsuarios
             // 
-            button1.BackgroundImage = (Image)resources.GetObject("button1.BackgroundImage");
-            button1.BackgroundImageLayout = ImageLayout.Center;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.ForeColor = SystemColors.HotTrack;
-            button1.Location = new Point(200, 16);
-            button1.Name = "button1";
-            button1.Size = new Size(87, 85);
-            button1.TabIndex = 0;
-            button1.UseVisualStyleBackColor = true;
+            btnUsuarios.BackgroundImage = (Image)resources.GetObject("btnUsuarios.BackgroundImage");
+            btnUsuarios.BackgroundImageLayout = ImageLayout.Center;
+            btnUsuarios.FlatStyle = FlatStyle.Flat;
+            btnUsuarios.ForeColor = SystemColors.HotTrack;
+            btnUsuarios.Location = new Point(200, 16);
+            btnUsuarios.Name = "btnUsuarios";
+            btnUsuarios.Size = new Size(87, 85);
+            btnUsuarios.TabIndex = 0;
+            btnUsuarios.UseVisualStyleBackColor = true;
+            btnUsuarios.Click += btnUsuarios_Click;
             // 
             // frmHome
             // 
@@ -131,6 +133,6 @@
         private Label label1;
         private Button btnFAQ;
         private Button btnProductos;
-        private Button button1;
+        private Button btnUsuarios;
     }
 }
