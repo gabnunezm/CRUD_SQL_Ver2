@@ -24,6 +24,7 @@ namespace CapaPresentacion
         private void Form1_Load(object sender, EventArgs e)
         {
             MostrarProdctos();
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
 
         private void MostrarProdctos()

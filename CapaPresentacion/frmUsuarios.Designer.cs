@@ -33,16 +33,16 @@
             btnEliminar = new Button();
             btnEditar = new Button();
             btnGuardar = new Button();
-            txtPrecio = new TextBox();
+            txtTipo = new TextBox();
             label4 = new Label();
-            txtMarca = new TextBox();
+            txtContrasena = new TextBox();
             label3 = new Label();
-            txtDesc = new TextBox();
+            txtUsuario = new TextBox();
             label2 = new Label();
             txtNombre = new TextBox();
             label1 = new Label();
-            dataGridView1 = new DataGridView();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            dgvUsuarios = new DataGridView();
+            ((System.ComponentModel.ISupportInitialize)dgvUsuarios).BeginInit();
             SuspendLayout();
             // 
             // btnRegresar
@@ -98,12 +98,12 @@
             btnGuardar.UseVisualStyleBackColor = true;
             btnGuardar.Click += btnGuardar_Click;
             // 
-            // txtPrecio
+            // txtTipo
             // 
-            txtPrecio.Location = new Point(797, 235);
-            txtPrecio.Name = "txtPrecio";
-            txtPrecio.Size = new Size(194, 23);
-            txtPrecio.TabIndex = 23;
+            txtTipo.Location = new Point(797, 235);
+            txtTipo.Name = "txtTipo";
+            txtTipo.Size = new Size(194, 23);
+            txtTipo.TabIndex = 23;
             // 
             // label4
             // 
@@ -116,12 +116,12 @@
             label4.TabIndex = 22;
             label4.Text = "Tipo";
             // 
-            // txtMarca
+            // txtContrasena
             // 
-            txtMarca.Location = new Point(797, 193);
-            txtMarca.Name = "txtMarca";
-            txtMarca.Size = new Size(194, 23);
-            txtMarca.TabIndex = 21;
+            txtContrasena.Location = new Point(797, 193);
+            txtContrasena.Name = "txtContrasena";
+            txtContrasena.Size = new Size(194, 23);
+            txtContrasena.TabIndex = 21;
             // 
             // label3
             // 
@@ -134,12 +134,12 @@
             label3.TabIndex = 20;
             label3.Text = "Contraseña";
             // 
-            // txtDesc
+            // txtUsuario
             // 
-            txtDesc.Location = new Point(797, 149);
-            txtDesc.Name = "txtDesc";
-            txtDesc.Size = new Size(194, 23);
-            txtDesc.TabIndex = 19;
+            txtUsuario.Location = new Point(797, 149);
+            txtUsuario.Name = "txtUsuario";
+            txtUsuario.Size = new Size(194, 23);
+            txtUsuario.TabIndex = 19;
             // 
             // label2
             // 
@@ -170,13 +170,12 @@
             label1.TabIndex = 16;
             label1.Text = "Nombre";
             // 
-            // dataGridView1
+            // dgvUsuarios
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(45, 41);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(656, 319);
-            dataGridView1.TabIndex = 15;
+            dgvUsuarios.Location = new Point(45, 41);
+            dgvUsuarios.Name = "dgvUsuarios";
+            dgvUsuarios.Size = new Size(656, 319);
+            dgvUsuarios.TabIndex = 15;
             // 
             // frmUsuarios
             // 
@@ -188,18 +187,19 @@
             Controls.Add(btnEliminar);
             Controls.Add(btnEditar);
             Controls.Add(btnGuardar);
-            Controls.Add(txtPrecio);
+            Controls.Add(txtTipo);
             Controls.Add(label4);
-            Controls.Add(txtMarca);
+            Controls.Add(txtContrasena);
             Controls.Add(label3);
-            Controls.Add(txtDesc);
+            Controls.Add(txtUsuario);
             Controls.Add(label2);
             Controls.Add(txtNombre);
             Controls.Add(label1);
-            Controls.Add(dataGridView1);
+            Controls.Add(dgvUsuarios);
             Name = "frmUsuarios";
             Text = "frmUsuarios";
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            Load += frmUsuarios_Load;
+            ((System.ComponentModel.ISupportInitialize)dgvUsuarios).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -210,14 +210,14 @@
         private Button btnEliminar;
         private Button btnEditar;
         private Button btnGuardar;
-        private TextBox txtPrecio;
+        private TextBox txtTipo;
         private Label label4;
-        private TextBox txtMarca;
+        private TextBox txtContrasena;
         private Label label3;
-        private TextBox txtDesc;
+        private TextBox txtUsuario;
         private Label label2;
         private TextBox txtNombre;
         private Label label1;
-        private DataGridView dataGridView1;
+        private DataGridView dgvUsuarios;
     }
 }

@@ -35,6 +35,7 @@
             btnFAQ = new Button();
             btnProductos = new Button();
             btnUsuarios = new Button();
+            btnLogout = new Button();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             SuspendLayout();
@@ -110,12 +111,27 @@
             btnUsuarios.UseVisualStyleBackColor = true;
             btnUsuarios.Click += btnUsuarios_Click;
             // 
+            // btnLogout
+            // 
+            btnLogout.BackColor = SystemColors.HotTrack;
+            btnLogout.BackgroundImage = (Image)resources.GetObject("btnLogout.BackgroundImage");
+            btnLogout.BackgroundImageLayout = ImageLayout.Center;
+            btnLogout.FlatStyle = FlatStyle.Flat;
+            btnLogout.ForeColor = SystemColors.HotTrack;
+            btnLogout.Location = new Point(328, 315);
+            btnLogout.Name = "btnLogout";
+            btnLogout.Size = new Size(87, 85);
+            btnLogout.TabIndex = 3;
+            btnLogout.UseVisualStyleBackColor = false;
+            btnLogout.Click += btnLogout_Click;
+            // 
             // frmHome
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.HotTrack;
             ClientSize = new Size(751, 402);
+            Controls.Add(btnLogout);
             Controls.Add(panel2);
             Controls.Add(panel1);
             Name = "frmHome";
@@ -134,5 +150,6 @@
         private Button btnFAQ;
         private Button btnProductos;
         private Button btnUsuarios;
+        private Button btnLogout;
     }
 }

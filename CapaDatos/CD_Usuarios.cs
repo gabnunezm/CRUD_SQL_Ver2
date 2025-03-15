@@ -1,82 +1,76 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Data;
 using Microsoft.Data.SqlClient;
 
 namespace CapaDatos
 {
-    public class CD_Productos
+    public class CD_Usuarios
     {
         private CD_Conexion conexion = new CD_Conexion();
-
+        SqlCommand comando = new SqlCommand();
         SqlDataReader leer;
         DataTable tabla = new DataTable();
-        SqlCommand comando = new SqlCommand();
 
+        // MOSTRAR USUARIOS
         public DataTable Mostrar()
         {
-
             comando.Connection = conexion.AbrirConexion();
-            comando.CommandText = "MostrarProductos";
+            comando.CommandText = "MostrarUsuarios";
             comando.CommandType = CommandType.StoredProcedure;
             leer = comando.ExecuteReader();
             tabla.Load(leer);
             conexion.CerrarConexion();
             return tabla;
-
         }
 
-        public void Insertar(string nombre, string desc, string marca, double precio, int stock)
+        // INSERTAR USUARIO
+        public void Insertar(string nombre, string usuario, string password, string tipo_usuario)
         {
             comando.Connection = conexion.AbrirConexion();
-            comando.CommandText = "InsetarProductos";
+            comando.CommandText = "InsertarUsuario";
             comando.CommandType = CommandType.StoredProcedure;
             comando.Parameters.AddWithValue("@nombre", nombre);
-            comando.Parameters.AddWithValue("@descrip", desc);
-            comando.Parameters.AddWithValue("@Marca", marca);
-            comando.Parameters.AddWithValue("@precio", precio);
-            comando.Parameters.AddWithValue("@stock", stock);
+            comando.Parameters.AddWithValue("@usuario", usuario);
+            comando.Parameters.AddWithValue("@password", password);
+            comando.Parameters.AddWithValue("@tipo_usuario", tipo_usuario);
 
             comando.ExecuteNonQuery();
-
             comando.Parameters.Clear();
             conexion.CerrarConexion();
-
         }
 
-        public void Editar(string nombre, string desc, string marca, double precio, int stock, int id)
+        // EDITAR USUARIO
+        public void Editar(int id_usuario, string nombre, string usuario, string password, string tipo_usuario)
         {
             comando.Connection = conexion.AbrirConexion();
-            comando.CommandText = "EditarProductos";
+            comando.CommandText = "EditarUsuario";
             comando.CommandType = CommandType.StoredProcedure;
+            comando.Parameters.AddWithValue("@id_usuario", id_usuario);
             comando.Parameters.AddWithValue("@nombre", nombre);
-            comando.Parameters.AddWithValue("@descrip", desc);
-            comando.Parameters.AddWithValue("@Marca", marca);
-            comando.Parameters.AddWithValue("@precio", precio);
-            comando.Parameters.AddWithValue("@stock", stock);
-            comando.Parameters.AddWithValue("@id", id);
+            comando.Parameters.AddWithValue("@usuario", usuario);
+            comando.Parameters.AddWithValue("@password", password);
+            comando.Parameters.AddWithValue("@tipo_usuario", tipo_usuario);
 
             comando.ExecuteNonQuery();
-
             comando.Parameters.Clear();
             conexion.CerrarConexion();
         }
 
-        public void Eliminar(int id)
+        // ELIMINAR USUARIO
+        public void Eliminar(int id_usuario)
         {
             comando.Connection = conexion.AbrirConexion();
-            comando.CommandText = "EliminarProducto";
+            comando.CommandText = "EliminarUsuario";
             comando.CommandType = CommandType.StoredProcedure;
-            comando.Parameters.AddWithValue("@idpro", id);
+            comando.Parameters.AddWithValue("@id_usuario", id_usuario);
 
             comando.ExecuteNonQuery();
-
             comando.Parameters.Clear();
             conexion.CerrarConexion();
         }
-
     }
 }

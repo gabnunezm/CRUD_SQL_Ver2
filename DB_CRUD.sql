@@ -39,7 +39,8 @@ Insert into Usuarios values ('Mario', 'Mario03', '123' , 'admin'),
 
 
 
----PROCEDIMIENTOS ALMACENADOS 
+----------------------PROCEDIMIENTOS ALMACENADOS PARA PRODUCTOS 
+
 --------------------------MOSTRAR 
 go
 create proc MostrarProductos
@@ -76,3 +77,47 @@ create proc EditarProductos
 as
 update Productos set Nombre=@nombre, Descripcion=@descrip, Marca=@marca, Precio=@precio, Stock=@stock where Id=@id
 go
+
+
+------------------------PROCEDIMIENTOS ALMACENADOS PARA USUARIOS
+
+-- PROCEDIMIENTO PARA MOSTRAR USUARIOS
+GO
+CREATE PROC MostrarUsuarios
+AS
+SELECT * FROM Usuarios
+GO
+
+-- PROCEDIMIENTO PARA INSERTAR USUARIOS
+GO
+CREATE PROC InsertarUsuario
+@nombre VARCHAR(50),
+@usuario VARCHAR(50),
+@password VARCHAR(50),
+@tipo_usuario VARCHAR(50)
+AS
+INSERT INTO Usuarios (Nombre, Usuario, Password, Tipo_usuario)
+VALUES (@nombre, @usuario, @password, @tipo_usuario)
+GO
+
+-- PROCEDIMIENTO PARA ELIMINAR USUARIO
+GO
+CREATE PROC EliminarUsuario
+@id_usuario INT
+AS
+DELETE FROM Usuarios WHERE Id_Usuario = @id_usuario
+GO
+
+-- PROCEDIMIENTO PARA EDITAR USUARIO
+GO
+CREATE PROC EditarUsuario
+@id_usuario INT,
+@nombre VARCHAR(50),
+@usuario VARCHAR(50),
+@password VARCHAR(50),
+@tipo_usuario VARCHAR(50)
+AS
+UPDATE Usuarios 
+SET Nombre = @nombre, Usuario = @usuario, Password = @password, Tipo_usuario = @tipo_usuario 
+WHERE Id_Usuario = @id_usuario
+GO

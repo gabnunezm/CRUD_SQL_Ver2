@@ -35,6 +35,7 @@
             label2 = new Label();
             txtUsuario = new TextBox();
             txtContrasena = new TextBox();
+            btnCerrar = new Button();
             SuspendLayout();
             // 
             // panel1
@@ -102,18 +103,33 @@
             txtContrasena.Size = new Size(186, 31);
             txtContrasena.TabIndex = 7;
             // 
+            // btnCerrar
+            // 
+            btnCerrar.BackgroundImage = (Image)resources.GetObject("btnCerrar.BackgroundImage");
+            btnCerrar.BackgroundImageLayout = ImageLayout.Zoom;
+            btnCerrar.FlatStyle = FlatStyle.Flat;
+            btnCerrar.ForeColor = Color.FromArgb(0, 26, 87);
+            btnCerrar.Location = new Point(637, -1);
+            btnCerrar.Name = "btnCerrar";
+            btnCerrar.Size = new Size(42, 38);
+            btnCerrar.TabIndex = 8;
+            btnCerrar.UseVisualStyleBackColor = true;
+            btnCerrar.Click += btnCerrar_Click;
+            // 
             // frmLogin
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(0, 26, 87);
             ClientSize = new Size(675, 315);
+            Controls.Add(btnCerrar);
             Controls.Add(btnAcceder);
             Controls.Add(txtContrasena);
             Controls.Add(txtUsuario);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(panel1);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "frmLogin";
             Text = "frmLogin";
             ResumeLayout(false);
@@ -128,5 +144,6 @@
         private Label label2;
         private TextBox txtUsuario;
         private TextBox txtContrasena;
+        private Button btnCerrar;
     }
 }

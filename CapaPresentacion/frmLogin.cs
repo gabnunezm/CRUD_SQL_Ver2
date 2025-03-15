@@ -55,5 +55,10 @@ namespace CapaPresentacion
                 return count > 0;
             }
         }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
