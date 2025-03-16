@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogin));
-            panel1 = new Panel();
+            pIcono = new Panel();
             btnAcceder = new Button();
             label1 = new Label();
             label2 = new Label();
@@ -38,15 +38,15 @@
             btnCerrar = new Button();
             SuspendLayout();
             // 
-            // panel1
+            // pIcono
             // 
-            panel1.BackColor = SystemColors.HotTrack;
-            panel1.BackgroundImage = (Image)resources.GetObject("panel1.BackgroundImage");
-            panel1.BackgroundImageLayout = ImageLayout.Center;
-            panel1.Location = new Point(2, -1);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(247, 316);
-            panel1.TabIndex = 0;
+            pIcono.BackColor = SystemColors.HotTrack;
+            pIcono.BackgroundImage = (Image)resources.GetObject("pIcono.BackgroundImage");
+            pIcono.BackgroundImageLayout = ImageLayout.Center;
+            pIcono.Location = new Point(2, -1);
+            pIcono.Name = "pIcono";
+            pIcono.Size = new Size(247, 316);
+            pIcono.TabIndex = 0;
             // 
             // btnAcceder
             // 
@@ -128,7 +128,7 @@
             Controls.Add(txtUsuario);
             Controls.Add(label2);
             Controls.Add(label1);
-            Controls.Add(panel1);
+            Controls.Add(pIcono);
             FormBorderStyle = FormBorderStyle.None;
             Name = "frmLogin";
             Text = "frmLogin";
@@ -138,7 +138,7 @@
 
         #endregion
 
-        private Panel panel1;
+        private Panel pIcono;
         private Button btnAcceder;
         private Label label1;
         private Label label2;

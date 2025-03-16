@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="panel1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pIcono.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         vAAADrwBlbxySQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAfBSURBVHhe7Z1N
@@ -161,7 +161,7 @@
   <data name="btnAcceder.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vgAADr4B6kKxwAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAN7SURBVHhe7ds5
+        vQAADr0BR/uQrQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAN7SURBVHhe7ds5
         ixRBGMbx9Qg9YMHIyEBBIw008AjEQARRBC/Qz6CBJl4gIkYmInig7oIIHij4GURQExdNNBADAw88wINV
         8fjLCy00D1MzVdVv93YP+4OBZab6vWZ2jp6akZEGAPOBg8B94B1T4zPwChgHlmqNtQF2AR+0mik2CWzX
         Wt0B+4G/mr0lfgDLtGY3wAbgt2ZtmWtatwtgJvBUs7XQG63dBbBWMxW+ACeB3cCOyMtxK1QDOfmjtbso
@@ -183,7 +183,7 @@
   <data name="btnCerrar.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAFz
-        /QABc/0BHVr41wAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAALeSURBVHhe7ZvL
+        /AABc/wBzx0aMwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAALeSURBVHhe7ZvL
         TtwwFIZnX/oEpSvgKZAiOyDeAoHEc/T2CgjBwHPABjasKF1ReAloJQRi2Yqe6g8xM3PikIuPHSWeI30b
         Oxf/38SeEcGjkaUoSVYoTb+S1j9I6zvS+h9pTT0DY74lrS+zLEmywnMWilZX35PWY9L6r+WCfQeZ9kmp
         BZ47K0qSj5SmN5YTh8ZPUmpxNrxSC6T1teXgoQIJkychf+z5QUNn7yU8Frxhzvkq/pBSy/j0v1k640Cp
