@@ -29,16 +29,14 @@ namespace CapaPresentacion
             {
                 MessageBox.Show("¡Bienvenido!", "Acceso concedido", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-
+                frmHome home = new frmHome();
+                home.Show();
+                this.Hide();
             }
             else
             {
                 MessageBox.Show("Usuario o contraseña incorrectos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
-            frmHome home = new frmHome();
-            home.Show();
-            this.Hide();
         }
 
         private bool ValidarUsuario(string usuario, string password)
