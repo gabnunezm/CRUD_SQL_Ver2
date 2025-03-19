@@ -32,10 +32,12 @@
             panel1 = new Panel();
             label1 = new Label();
             panel2 = new Panel();
+            label2 = new Label();
             btnFAQ = new Button();
             btnProductos = new Button();
             btnUsuarios = new Button();
             btnLogout = new Button();
+            label3 = new Label();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             SuspendLayout();
@@ -63,13 +65,26 @@
             // panel2
             // 
             panel2.BackColor = SystemColors.HotTrack;
+            panel2.Controls.Add(label3);
+            panel2.Controls.Add(label2);
             panel2.Controls.Add(btnFAQ);
             panel2.Controls.Add(btnProductos);
             panel2.Controls.Add(btnUsuarios);
-            panel2.Location = new Point(0, 180);
+            panel2.Location = new Point(0, 144);
             panel2.Name = "panel2";
             panel2.Size = new Size(751, 115);
             panel2.TabIndex = 1;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI Semibold", 9F);
+            label2.ForeColor = Color.White;
+            label2.Location = new Point(223, 100);
+            label2.Name = "label2";
+            label2.Size = new Size(52, 15);
+            label2.TabIndex = 4;
+            label2.Text = "Usuarios";
             // 
             // btnFAQ
             // 
@@ -125,6 +140,17 @@
             btnLogout.UseVisualStyleBackColor = false;
             btnLogout.Click += btnLogout_Click;
             // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI Semibold", 9F);
+            label3.ForeColor = Color.White;
+            label3.Location = new Point(347, 100);
+            label3.Name = "label3";
+            label3.Size = new Size(61, 15);
+            label3.TabIndex = 5;
+            label3.Text = "Productos";
+            // 
             // frmHome
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -139,6 +165,7 @@
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             panel2.ResumeLayout(false);
+            panel2.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -151,5 +178,7 @@
         private Button btnProductos;
         private Button btnUsuarios;
         private Button btnLogout;
+        private Label label2;
+        private Label label3;
     }
 }
