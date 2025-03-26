@@ -32,13 +32,13 @@
             panel1 = new Panel();
             label1 = new Label();
             panel2 = new Panel();
+            label4 = new Label();
             label3 = new Label();
             label2 = new Label();
             btnFAQ = new Button();
             btnProductos = new Button();
             btnUsuarios = new Button();
             btnLogout = new Button();
-            label4 = new Label();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             SuspendLayout();
@@ -77,12 +77,23 @@
             panel2.Size = new Size(751, 115);
             panel2.TabIndex = 1;
             // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI Semibold", 9F);
+            label4.ForeColor = Color.White;
+            label4.Location = new Point(472, 100);
+            label4.Name = "label4";
+            label4.Size = new Size(60, 15);
+            label4.TabIndex = 6;
+            label4.Text = "Preguntas";
+            // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI Semibold", 9F);
             label3.ForeColor = Color.White;
-            label3.Location = new Point(347, 100);
+            label3.Location = new Point(343, 100);
             label3.Name = "label3";
             label3.Size = new Size(61, 15);
             label3.TabIndex = 5;
@@ -93,7 +104,7 @@
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI Semibold", 9F);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(223, 100);
+            label2.Location = new Point(217, 100);
             label2.Name = "label2";
             label2.Size = new Size(52, 15);
             label2.TabIndex = 4;
@@ -152,17 +163,6 @@
             btnLogout.TabIndex = 3;
             btnLogout.UseVisualStyleBackColor = false;
             btnLogout.Click += btnLogout_Click;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI Semibold", 9F);
-            label4.ForeColor = Color.White;
-            label4.Location = new Point(472, 100);
-            label4.Name = "label4";
-            label4.Size = new Size(60, 15);
-            label4.TabIndex = 6;
-            label4.Text = "Preguntas";
             // 
             // frmHome
             // 
